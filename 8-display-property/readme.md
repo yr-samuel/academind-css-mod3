@@ -10,6 +10,7 @@ Por padrão os elementos HTML já vem com algum display definido, ou é __block_
   * Caso definamos algum padding-top ou bottom, esse espaçamento interno será inserido no elemento, mas não empurrará o conteudo que fica em volta, meio que ele ficará por cima dos outros conteúdos.
   * Somente quando o elemento ultrapassar os limites da largura do elemento pai que ele vai quebrar a linha e iniciar numa nova.
   * Não pode haver elementos com display block dentro de um elemento com display inline.
+  * Como display inline é considerado como um texto, qualquer espaço que seja dado no código é considerado como um espaço entre textos, por isso pode acontecer de ter um espaço antes ou depois de um elemento inline
 
 * É possível também definir a propriedade display com __inline-block__ que basicamente junta os comportamentos do __inline__ com o do __block__, com isso o elemento ainda continua sendo em linha, sua largura se mantém no tamanho do seu conteúdo, mas fica habilitado para modificarmos width, height, margin em sua totalidade e que realmente terá efeito real nesse elemento, o padding agora também empurrará os conteúdos que estão em volta.
 
