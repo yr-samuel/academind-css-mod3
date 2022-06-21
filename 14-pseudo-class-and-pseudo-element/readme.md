@@ -1,0 +1,9 @@
+### Pseudo Classes e Pseudo Elementos
+
+* Pseudo classes definem o estilo de um estado especial de um elemento, como por exemplo: *:hover* (quando o mouse fica por cima do elemento), *:focus* (quando o elemento é clicado ou selecionado via teclado). Para usarmos essa pseudo classe, a sintaxe é a seguinte elemento<ins>:</ins>nome-pseudo-classe (elemento seguido de __:__ e seguido do nome da pseudo classe).
+
+* Pseudo elementos definem o estilo de uma parte especifica do elemento, como por exemplo: *::first-letter* (a regra é aplicada a primeira letra do texto do elemento), *::before, ::after* (possível colocar elemento filho antes e/ou depois do conteúdo principal do elemento). Para usarmos essa pseudo classe, a sintaxe é a seguinte elemento<ins>::</ins>nome-pseudo-elemento (elemento seguido de __::__ seguido do nome do pseudo elemento).
+
+* Aprendizado que veio durante essa parte da caminhada, variáveis no CSS serão herdadas até o último elemento da árvore do DOM a partir da onde você as criou, logo se você cria essas váriáveis a partir do elemento HTML basicamente essas variáveis CSS serão globais, pois toda a árvore tera acesso. E como estamos falando de pseudo elementos e pseudo classes, temos a pseudo classe *:root* que basicamente se equipara ao elemento ao qual é aplicado, muito usado junto com o elemento HTML, assim conseguimos por exemplo declarar uma variável CSS de forma global.
+
+* No caso dos pseudo elementos *::after* e *::before*, as regras de CSS aplicadas aos filhos do elemento que usam esses pseudo-elementos atingirão esses elementos criados por esses pseudo-elementos.
